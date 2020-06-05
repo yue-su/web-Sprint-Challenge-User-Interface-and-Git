@@ -180,3 +180,48 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* About page */
+
+.about-page-one {
+    border-bottom: 1px dotted black;
+    padding: 15px 30px;
+    
+}
+
+.about-page-two {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px;
+}
+
+.card {
+    border-bottom: 1px dotted black;
+    width: 360px;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.card h2{
+    padding-top: 5px;
+}
+
+.card p {
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.about-page-three {
+    padding: 30px;
+}
