@@ -95,6 +95,13 @@ p {
 .nav-link {
     text-decoration: none;
     color:black;
+    width: 20px;
+}
+
+.nav-link:hover {
+    font-size: 120%;
+    transition-duration: 300ms;
+
 }
 
 .top-content {
@@ -147,6 +154,14 @@ p {
 .box8 {background-color: hotpink;}
 .box9 {background-color: indigo;}
 .box10 {background-color: dodgerblue;}
+
+.box:hover {
+    transform: translate(-5px, -10px);
+    box-shadow: 3px 3px rgb(230, 230, 230);
+    transition-duration: 500ms;
+    filter: grayscale(60%)
+}
+    
 
 .bottom-content {
     display: flex;
@@ -220,6 +235,16 @@ footer nav a {
     padding: 10px 20px;
     margin: 5px 0;
     text-align: center;
+}
+
+.btn:hover {
+    transform: translate(0, -5px);
+    box-shadow: 3px 3px lightgray;
+    transition-duration: 500ms;
+}
+
+.card img:hover {
+    filter: opacity(80%);
 }
 
 .about-page-three {
