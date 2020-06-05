@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -49,11 +49,13 @@ table {
 
 * {
     box-sizing: border-box;
+    border:1px solid grey;
 }
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 h1, h2, h3, h4, h5 {
@@ -70,6 +72,24 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+
+/* Header */
+
+.header-container{
+    margin: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: stretch;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 
 .top-content {
     display: flex;

@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    
 }
 
 html, body {
@@ -69,6 +70,38 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+/* header */
+
+.header-container {
+    margin-bottom: 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    color:black;
+    text-align: cente;
+}
+
+.nav-link:hover {
+    font-size: 120%;
+    transition-duration: 300ms;
+
 }
 
 .top-content {
@@ -104,13 +137,31 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.box1 {background-color: teal;}
+.box2 {background-color: gold;}
+.box3 {background-color: cadetblue;}
+.box4 {background-color: coral;}
+.box5 {background-color: crimson;}
+.box6 {background-color: forestgreen;}
+.box7 {background-color: darkorchid;}
+.box8 {background-color: hotpink;}
+.box9 {background-color: indigo;}
+.box10 {background-color: dodgerblue;}
+
+.box:hover {
+    transform: translate(-5px, -10px);
+    box-shadow: 3px 3px rgb(230, 230, 230);
+    transition-duration: 500ms;
+    filter: grayscale(60%)
+}
+    
 
 .bottom-content {
     display: flex;
@@ -143,4 +194,108 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* About page */
+
+.about-page-one {
+    border-bottom: 1px dotted black;
+    padding: 15px 30px;
+    
+}
+
+.about-page-two {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px;
+}
+
+.card {
+    border-bottom: 1px dotted black;
+    width: 360px;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.card h2{
+    padding-top: 5px;
+}
+
+.card p {
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.btn:hover {
+    transform: translate(0, -5px);
+    box-shadow: 3px 3px lightgray;
+    transition-duration: 500ms;
+}
+
+.card img:hover {
+    filter: opacity(80%);
+}
+
+.about-page-three {
+    padding: 30px;
+}
+
+
+/* Contact */
+
+.contact-container {
+    text-align: center;
+}
+
+.contact-form {
+    line-height: 50px;
+
+}
+
+
+/* media */
+
+@media only screen and (max-width: 500px) {
+    
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .middle-content .boxes .box {
+        flex-wrap: wrap;
+    }
+
+    .nav-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-logo {
+        width: 30%;
+        margin-bottom: 10px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
 }
